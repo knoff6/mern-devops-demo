@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "lint": "eslint . || true",
-    "test": "node -e "console.log('dummy tests passed')""
+    "test": "node -e \"console.log('dummy tests passed')\""
   },
   "dependencies": {
     "dotenv": "^16.4.5",
