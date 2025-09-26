@@ -25,6 +25,16 @@ This demo runs a MERN app (frontend + backend + MongoDB) in Docker for local dev
       ```bash
       sudo apt-get install docker-buildx-plugin
       ```
+  - **Linux (Kali Linux):**
+    - Install Docker from the official repo (recommended).
+    - Install **Docker Compose v2** plugin:
+      ```bash
+      sudo apt update
+      sudo apt install -y docker.io docker-compose
+      sudo systemctl enable docker --now
+      sudo usermod -aG docker $USER
+      newgrp docker
+      ```
   - **Windows 10/11:** Install **Docker Desktop** (includes Compose v2).
   - **macOS (Intel/Apple Silicon):** Install **Docker Desktop** (includes Compose v2).
 
