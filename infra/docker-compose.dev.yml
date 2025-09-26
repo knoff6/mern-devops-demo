@@ -9,9 +9,9 @@ services:
     build: ../backend
     container_name: mern_backend
     environment:
-      - MONGO_URL=mongodb://mongo:27017/merndemo
+      - MONGO_URL=mongodb://mern_mongo:27017/merndemo
       - PORT=4000
-    depends_on: [mongo]
+    depends_on: [mern_mongo]
     ports: ["4000:4000"]
 
   frontend:
